@@ -3,56 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <title>我的网站</title>
-    <style>
-      body {
-        background-image: url('image/background.jpg');
-        background-size: cover;
-        text-align: center;
-        font-size: 48px;
-        font-weight: bold;
-        color: white;
-        margin: 0;
-        padding: 0;
-        height: 100vh;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        overflow-x: hidden;
-      }
-      h1 {
-        text-shadow: 2px 2px #000;
-      }
-      p {
-        font-size: 24px;
-        font-weight: normal;
-        margin-top: 10px;
-      }
-      .page {
-        width: 100vw;
-        height: 100vh;
-        position: absolute;
-        top: 0;
-        left: 100vw;
-        background-color: rgba(0, 0, 0, 0.5);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        z-index: -1;
-        transition: all 0.5s ease-in-out;
-      }
-      .page.active {
-        left: 0;
-        z-index: 1;
-      }
-      .page h2 {
-        font-size: 36px;
-        font-weight: bold;
-        color: white;
-        margin: 0;
-        padding: 0;
-        text-shadow: 2px 2px #000;
-      }
-    </style>
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
     <div>
@@ -64,13 +15,6 @@
     <div class="page">
       <h2>第二个页面</h2>
     </div>
-    <script>
-      const page = document.querySelector('.page');
-      document.addEventListener('keyup', event => {
-        if (event.keyCode === 39) { // 按下右箭头键
-          page.classList.toggle('active');
-        }
-      });
-    </script>
+    <script src="script.js"></script>
   </body>
 </html>
