@@ -1,48 +1,76 @@
 body {
-  background-image: url('image/background.jpg'); /* 替换为你自己的背景图片路径 */
-  background-size: cover;
-  text-align: center;
-  font-size: 48px;
-  font-weight: bold;
-  color: white;
   margin: 0;
   padding: 0;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  overflow-x: hidden;
+  background-image: url(image/background.jpg);
+  background-size: cover;
 }
-h1 {
-  text-shadow: 2px 2px #000;
-}
-p {
-  font-size: 24px;
-  font-weight: normal;
-  margin-top: 10px;
-}
-.page {
-  width: 100vw;
-  height: 100vh;
-  position: absolute;
+
+.logo-bar {
+  background-color: #302e3e;
+  height: 100px;
+  width: 100%;
+  position: fixed;
   top: 0;
-  left: 100vw;
+  left: 0;
+  z-index: 1000;
+}
+
+.next-page {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
   background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+}
+
+.next-page a {
+  display: inline-block;
+  font-size: 24px;
+  color: #fff;
+  text-shadow: 2px 2px 4px #000000;
+  text-decoration: none;
+  padding: 10px 20px;
+  background-color: #302e3e;
+  border-radius: 5px;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.next-page a:hover {
+  background-color: #423d52;
+}
+
+
+.logo {
+  height: 100px;
+  width: auto;
+  margin: 0 auto;
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: -1;
-  transition: all 0.5s ease-in-out;
 }
-.page.active {
-  left: 0;
-  z-index: 1;
+
+.content {
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 150px;
 }
-.page h2 {
-  font-size: 36px;
-  font-weight: bold;
-  color: white;
-  margin: 0;
-  padding: 0;
-  text-shadow: 2px 2px #000;
+
+h1 {
+  font-size: 48px;
+  color: #fff;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+p {
+  font-size: 24px;
+  color: #fff;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+a {
+  font-size: 24px;
+  color: #fff;
+  text-shadow: 2px 2px 4px #000000;
+  text-decoration: none;
 }
