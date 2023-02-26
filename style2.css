@@ -33,11 +33,6 @@
 }
 
 
-.left img {
-    max-width: 100%;
-    height: auto;
-}
-
 /* Set styles for the right div */
 .right {
     position: relative;
